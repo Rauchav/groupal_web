@@ -1,0 +1,28 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 60%;
+  margin: auto;
+  font-family: "Inter Black", sans-serif;
+  color: #1b4487;
+}
+
+.back__icon {
+  width: 20px;
+}
+
+.back__icon:hover {
+  filter: invert(72%) grayscale(0%) sepia(82%) saturate(350%) hue-rotate(0deg);
+}
+
+.not-found__title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.not-found__text {
+  font-size: 23px;
+  text-align: center;
+}

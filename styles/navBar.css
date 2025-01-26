@@ -1,0 +1,20 @@
+.navBar__menu {
+  font-family: "Inter Medium", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+  min-width: 460px;
+}
+
+.navBar__link {
+  color: white;
+  text-decoration: none;
+}
+
+.navBar__link-active {
+  color: #eaad00;
+  text-decoration: none;
+}
