@@ -1,51 +1,7 @@
-.provisional {
+.home {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-}
-.page__title {
-  font-family: "Inter Black", sans-serif;
-  font-size: 42px;
-  color: #1b4487;
-}
-
-.web__icon {
-  max-width: 200px;
-}
-
-.text__description {
-  font-family: "Inter Regular", sans-serif;
-  font-size: 20px;
-  color: #1b4487;
-}
-
-.greetings {
-  font-family: "Inter Regular", sans-serif;
-  font-size: 20px;
-  color: #1b4487;
-  text-align: center;
-}
-
-.buttons__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  min-width: 46%;
-}
-
-.button__home {
-  font-family: "Inter Medium", sans-serif;
-  font-size: 20px;
-  background-color: white;
-  color: #1b4487;
-  padding: 10px 30px 10px 30px;
-  border: solid 2px #1b4487;
-  border-radius: 5px;
-}
-
-.button__home:hover {
-  background-color: #1b4487;
-  color: white;
 }

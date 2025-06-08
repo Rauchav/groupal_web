@@ -1,33 +1,21 @@
-import icon from "../../../resourses/images/web-icon-white.svg";
-import Greetings from "./Greetings";
+import MostWanted from "../../components/Main/MostWanted/MostWanted";
+import AddBanner from "../../components/Main/AddBanner/AddBanner";
+import CategoriesMenu from "../../components/Main/CategoriesMenu/CategoriesMenu";
+import { categories } from "../../mockUpData/categories";
 import "./home.css";
 
-function Home({ setLang, setName }) {
-  const toggleLang = () => {
-    setLang((prevLang) => (prevLang === "es" ? "en" : "es"));
-  };
-
-  const toggleUser = () => {
-    setName((prevUser) => (prevUser === "user1" ? "user2" : "user1"));
-  };
-
+function Home() {
   return (
-    <div className="provisional">
-      <h1 className="page__title">Home Page</h1>
-      <img className="web__icon" src={icon}></img>
-      <p className="text__description">
-        This is the Home screen where the user will start experiensing with the
-        app
-      </p>
-      <Greetings />
-      <div className="buttons__container">
-        <button className="button__home" onClick={toggleLang}>
-          Cambiar Lenguaje
-        </button>
-        <button className="button__home" onClick={toggleUser}>
-          Cambiar Nombre
-        </button>
+    <div className="home">
+      <AddBanner />
+      <div className="categoriesmenu__title-container">
+        <h1 className="categoriesmenu__title">Choose a category</h1>
       </div>
+      <CategoriesMenu categories={categories} />
+      <div className="mostwanted__title-container">
+        <h1 className="mostwanted__title">New groupal offers</h1>
+      </div>
+      <MostWanted />
     </div>
   );
 }

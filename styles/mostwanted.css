@@ -1,0 +1,35 @@
+.mostwanted {
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 50px;
+}
+
+.mostwanted__title-container {
+  margin: 20px 0 50px 0;
+}
+
+.mostwanted__title {
+  font-family: "Inter Black", sans-serif;
+  font-size: 28px;
+  color: #1b4487;
+  text-align: center;
+}
+
+@media (min-width: 380px) {
+  .mostwanted {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 769px) {
+  .mostwanted {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .mostwanted {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

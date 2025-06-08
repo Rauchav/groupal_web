@@ -1,14 +1,11 @@
-import logo from "../../../resourses/images/logo-fondo-color.svg";
-import NavBar from "../../components/NavBar/NavBar";
-import { Link } from "react-router-dom";
+import UpHeader from "./UpHeader";
+import SubHeader from "./SubHeader";
 
 function Header() {
   return (
     <header className="header">
-      <Link to="/" className="link__container">
-        <img className="logo" alt="Groupal Logo" src={logo} />
-      </Link>
-      <NavBar />
+      <UpHeader />
+      <SubHeader />
     </header>
   );
 }

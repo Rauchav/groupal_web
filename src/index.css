@@ -2,3 +2,7 @@
 @import url(../styles/header.css);
 @import url(../src/pages/Home/home.css);
 @import url(../resourses/fonts/fonts.css);
+@import url(../styles/productcard.css);
+@import url(../styles/addbanner.css);
+@import url(../styles/mostwanted.css);
+@import url(../styles/categoriesmenu.css);

@@ -1,0 +1,148 @@
+.card {
+  width: 340px;
+  margin: 0 10px 0 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  z-index: -10;
+}
+
+.card__picture {
+  width: 100%;
+  object-fit: cover;
+  height: 330px;
+  border-radius: 20px 20px 0 0;
+}
+
+.image__container {
+  position: relative;
+}
+
+.requiered__user-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-family: "Inter Medium", sans-serif;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.requiered__user-text-box {
+  border: solid 2px #1b4487;
+  background-color: white;
+  color: #1b4487;
+  font-size: 14px;
+  border-radius: 0 5px 5px 0;
+  padding: 0 5px 0 5px;
+  margin-left: -2px;
+}
+
+.requiered__user-number-box {
+  background-color: #1b4487;
+  border-radius: 5px;
+  padding: 3px 8px 3px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.user-icon {
+  fill: white;
+  margin-left: 3px;
+  width: 20px;
+}
+
+.days__left-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-family: "Inter Medium", sans-serif;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.days__left-text-box {
+  border: solid 2px #1b4487;
+  background-color: white;
+  color: #1b4487;
+  font-size: 14px;
+  border-radius: 0 5px 5px 0;
+  padding: 0 5px 0 5px;
+  margin-left: -2px;
+}
+
+.days__left-number-box {
+  background-color: #1b4487;
+  border-radius: 5px;
+  padding: 3px 8px 3px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.timer-icon {
+  fill: white;
+  margin-left: 5px;
+  width: 20px;
+}
+
+.card__info-bar {
+  font-family: "Inter Medium", sans-serif;
+  font-size: 16px;
+  padding: 15px 15px 15px 15px;
+}
+
+.card__info-bar-productName {
+  margin-bottom: 10px;
+  color: #121212;
+}
+
+.card__info-bar-regularPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #828282;
+}
+
+.regularPrice__price {
+  text-decoration: line-through;
+}
+
+.card__info-bar-groupalPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.groupalPrice__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  font-size: 20px;
+}
+
+.groupalPrice__logo {
+  margin-right: 10px;
+  width: 80px;
+}
+
+.groupalPrice__title-text {
+  color: #1b4487;
+}
+
+.groupalPrice__price {
+  color: white;
+  background-color: #1b4487;
+  padding: 5px;
+  border-radius: 5px;
+}

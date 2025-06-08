@@ -7,8 +7,6 @@ import Reviews from "../pages/Reviews/Reviews";
 import Review from "../pages/Review/Review";
 import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import React from "react";
-import { TranslationContext, translations } from "./Context/TranslationContext";
-import { CurrentUserContext, users } from "./Context/CurrentUserContext";
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -34,16 +32,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="*" element={<PageNotFound />} />
-        <Route
-          path="/"
-          element={
-            <TranslationContext.Provider value={translations[lang]}>
-              <CurrentUserContext.Provider value={users[name]}>
-                <Home setLang={setLang} setName={setName} />
-              </CurrentUserContext.Provider>
-            </TranslationContext.Provider>
-          }
-        />
+        <Route path="/" element={<Home />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/mylocker" element={<MyLocker />} />
         <Route path="/notifications" element={<Notifications />} />
